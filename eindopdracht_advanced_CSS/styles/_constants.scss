@@ -1,0 +1,57 @@
+//variabele
+$color-gray: #c3cfe2;
+$color-white: #fff;
+$color-purple-blue: #686de0;
+$color-soft-white: rgba(255, 255, 255, 0.5);
+$color-soft-gray: rgba(72, 75, 79, 0.7);
+$color-btn-gray: #404040;
+$text-standard: sans-serif;
+$footer-translate: translateY(-75px);
+$padding-media-btn: 5px;
+$translate-hover: translateX(20px);
+
+//mixins
+
+@mixin flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font-fab {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  display: block;
+  padding: 0 10px;
+  float: left;
+}
+
+@mixin font-fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: block;
+  padding: 0 10px;
+  float: left;
+}
+
+@mixin nav-link {
+  padding: 0 10px;
+  color: $color-white;
+  text-align: center;
+}
+
+@mixin nav-before-hover {
+  padding: $padding-media-btn;
+  transform: translateX(200px);
+  transition: transform 400ms ease;
+}
+
+@mixin icon-awesome-before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-size: 20px;
+  padding: 10px 15px;
+}

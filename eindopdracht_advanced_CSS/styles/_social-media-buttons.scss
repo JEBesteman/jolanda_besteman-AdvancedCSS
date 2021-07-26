@@ -1,0 +1,87 @@
+/*social-media-buttons section*/
+
+.social-media {
+  list-style-type: none;
+  font-family: $text-standard;
+  font-size: 16px;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 30%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  & i::before {
+    @include icon-awesome-before();
+  }
+  &__blog {
+    background-color: #e17b77;
+    @include nav-before-hover();
+    &:hover {
+      transform: $translate-hover;
+    }
+    &.fa-laptop-code::before {
+      content: "\f5fc";
+      @include font-fas;
+    }
+    & a {
+      @include nav-link;
+    }
+  }
+  &__facebook {
+    background-color: #3b5998;
+    @include nav-before-hover();
+    &:hover {
+      transform: $translate-hover;
+    }
+    &.fa-facebook-f::before {
+      content: "\f39e";
+      @include font-fab;
+    }
+    & a {
+      @include nav-link;
+    }
+  }
+  &__twitter {
+    background-color: #00aced;
+    @include nav-before-hover();
+    &:hover {
+      transform: $translate-hover;
+    }
+    &.fa-twitter::before {
+      content: "\f099";
+      @include font-fab;
+    }
+    & a {
+      @include nav-link;
+    }
+  }
+  &__github {
+    background-color: #333;
+    @include nav-before-hover();
+    &:hover {
+      transform: $translate-hover;
+    }
+    &.fa-github::before {
+      content: "\f09b";
+      @include font-fab;
+    }
+    & a {
+      @include nav-link;
+    }
+  }
+  &__linkedin {
+    background-color: #007bb6;
+    @include nav-before-hover();
+    &:hover {
+      transform: $translate-hover;
+    }
+    &.fa-linkedin-in::before {
+      content: "\f0e1";
+      @include font-fab;
+    }
+    & a {
+      @include nav-link;
+    }
+  }
+}
