@@ -22,10 +22,10 @@
     }
     &.fa-laptop-code::before {
       content: "\f5fc";
-      @include font-fas;
+      @include font-fas();
     }
     & a {
-      @include nav-link;
+      @include nav-link();
     }
   }
   &__facebook {
@@ -36,10 +36,10 @@
     }
     &.fa-facebook-f::before {
       content: "\f39e";
-      @include font-fab;
+      @include font-fab();
     }
     & a {
-      @include nav-link;
+      @include nav-link();
     }
   }
   &__twitter {
@@ -50,10 +50,10 @@
     }
     &.fa-twitter::before {
       content: "\f099";
-      @include font-fab;
+      @include font-fab();
     }
     & a {
-      @include nav-link;
+      @include nav-link();
     }
   }
   &__github {
@@ -64,10 +64,10 @@
     }
     &.fa-github::before {
       content: "\f09b";
-      @include font-fab;
+      @include font-fab();
     }
     & a {
-      @include nav-link;
+      @include nav-link();
     }
   }
   &__linkedin {
@@ -78,10 +78,10 @@
     }
     &.fa-linkedin-in::before {
       content: "\f0e1";
-      @include font-fab;
+      @include font-fab();
     }
     & a {
-      @include nav-link;
+      @include nav-link();
     }
   }
 }
